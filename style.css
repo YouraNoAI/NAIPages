@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Modak&display=swap");
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Modak" serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-Images {
+  width: 26%;
+  height: 100vh;
+  background-image: url(./Study-Story.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.second-Images {
+  width: 74%;
+  height: 100vh;
+  background-image: url(./NAI-Wpp.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.filters-Black {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.contents {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  font-family: "Modak" serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-features {
+  gap: 25px;
+}
+
+.features {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 45px;
+  border: 2px solid white;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.features .index-features {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.features .other-features {
+  display: none;
+  transition: 0.5s;
+}
+.features .other-features.active {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+a {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+a:hover {
+  scale: 1.2;
+}
+
+i {
+  color: #000000;
+  font-size: 45px;
+}
+
+#togle-other {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+  border: 2px solid white;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.7s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+h2 {
+  font-size: 45px;
+  font-family: "Modak";
+  transition: 0.5s;
+}
+
+#Monitors {
+  color: #006bff;
+}
+
+#search{
+    display: flex;
+    flex-direction: row;
+}
+
+#search input{
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    width: 500px;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+#search button{
+    width: 45px;
+    background: transparent;
+    border: none;
+    color: #000;
+    margin-left: -45px;
+}
+
+#search button i{
+    font-size: 25px;
+    color: #000;
+}
